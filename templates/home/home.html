@@ -1,0 +1,83 @@
+<ion-view view-title="美食主页" hide-back-button="true" ui-sref="tabs.home" >
+    <ion-content class="scroll-content">
+        <!--<div class="list">
+            <a class="item item-icon-left" ui-sref="headlines">
+                <i class="icon ion-document-text"></i>查看你的预定
+            </a>
+            <a class="item item-icon-left" ui-sref="my">
+                <i class="icon ion-ios-sunny"></i>查看当前天气预报
+            </a>
+            <a class="item item-icon-left" ui-sref="restaurants">
+            <i class="icon ion-fork"></i>查看附近餐馆
+             </a>
+        </div>-->
+        <!--轮播图-->
+        <ion-slide-box does-continue="true" auto-play="true"
+                       slide-interval="2500" show-pager="false">
+            <ion-slide>
+                <div class="box"><img src="./images/yangpai.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="./images/meishi.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="./images/yangpai.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="./images/sk.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="./images/yangpai.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+      <!--  流行食谱等。。。。。-->
+        <ion-tabs class="tabs-assertive tabs-icon-top">
+                <ion-tab title="流行食谱"
+                         icon-on="ion-ios-bookmarks"
+                         icon-off="ion-ios-bookmarks-outline">
+                    <ion-nav-view name="tab-clothe"></ion-nav-view>
+                </ion-tab>
+
+                <ion-tab title="厨房宝典"
+                         icon-on="ion-ios-book"
+                         icon-off="ion-ios-book-outline">
+                    <ion-nav-view name="tab-book"></ion-nav-view>
+                </ion-tab>
+
+                <ion-tab title="菜谱分类"
+                         icon-on="ion-ios-pie"
+                         icon-off="ion-ios-pie-outline">
+                    <ion-nav-view name="tab-cart"></ion-nav-view>
+                </ion-tab>
+
+                <ion-tab title="美食养生"
+                         icon-on="ion-ios-heart"
+                         icon-off="ion-ios-heart-outline">
+                    <ion-nav-view name="tab-cart"></ion-nav-view>
+                </ion-tab>
+            </ion-tabs>
+        <!--美刻头条-->
+        <p style="position: absolute;line-height: 37px;">美刻头条</p>
+        <ion-list style="position: absolute;top: 350px; width: 100%">
+            <ion-item class="item-avatar-left" >
+                <img src="./images/ss.jpg">
+                <h2>蜂蜜水能润肺解疲劳</h2>
+                <p>健康养生</p>
+            </ion-item>
+            <ion-item class="item-avatar-left" >
+                <img src="./images/ss.jpg">
+                <h2>蜂蜜水能润肺解疲劳</h2>
+                <p>健康养生</p>
+            </ion-item>
+            <ion-item class="item-avatar-left" >
+                <img src="./images/ss.jpg">
+                <h2>蜂蜜水能润肺解疲劳</h2>
+                <p>健康养生</p>
+            </ion-item>
+            <img src="./images/pj.jpg" style="width: 100%;">
+        </ion-list>
+
+    </ion-content>
+
+
+</ion-view>

@@ -1,0 +1,13 @@
+<ion-view view-title="头条" ui-sref="tabs.headlines" >
+    <ion-content ng-controller="headlinesCtrl">
+        <ion-list style="position: absolute; width: 100%" >
+            <ion-item class="item-avatar-left" ng-repeat="product in headlines">
+                <img ng-src="{{product.images}}">
+                <h2>{{product.title}}</h2>
+                <p>{{product.desc}}</p>
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+
+</ion-view>

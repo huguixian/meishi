@@ -1,0 +1,16 @@
+<ion-view view-title="发现最热门" <!--ui-sref="tabs.restaurants-->" >
+    <ion-content ng-controller="restaurantsCtrl">
+        <div class="card" ng-repeat="data in restaurants" >
+            <div class="item item-avatar"　>
+                <img ng-src="{{data.images}}">
+                <h2>{{data.title}}</h2>
+                <p>{{data.desc}}</p>
+            </div>
+            <div class="item item-image meishi">
+                <img ng-src="{{data.imgurl}}">
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

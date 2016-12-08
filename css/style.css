@@ -1,0 +1,30 @@
+#tour-view .slide-icon{
+    font-size: 20em;
+}
+
+/*整个幻灯*/
+
+#tour-view .slider{
+    height:100%
+}
+
+
+/*每个幻灯页*/
+#tour-view .slider-slide{
+    text-align: center;
+    padding-top:100px;
+
+}
+.box{height:320px;}
+.box > img{width:100%;height:100%;display:block;}
+#tour-view .slider-slide {
+    text-align: center;
+    padding-top: 0px;
+}
+
+#foot .tab-nav.tabs{position: absolute;
+    left: 0px;
+}
+.list-ion i{color: #ef473a;}
+
+.meishi{height:170px;}
